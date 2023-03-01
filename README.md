@@ -15,8 +15,8 @@ The program reads loaded database via pyspark.sql SparkSession to make data quer
 
 Here's the Console Menu Skeleton:
 Main Menu:
-1. Transaction Details Menu
-    1.1. Customer Transactions by ZIP
+1. Transaction Details Menu \n
+    1.1. Customer Transactions by ZIP \n
         inputs: zip, month, year
     1.2. Transactions by Transaction Type
         inputs: type
