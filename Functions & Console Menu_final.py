@@ -5,8 +5,6 @@ import pyspark as py
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import*
 from pyspark.sql.types import*
-import json
-import requests
 import re
 import pandas as pd
 import numpy as np

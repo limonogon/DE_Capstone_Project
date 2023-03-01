@@ -21,9 +21,9 @@ import datetime
 spark = SparkSession.builder.appName('Sparkappdemo').getOrCreate()
 
 #Reading json files to df
-branchdf = spark.read.json("C:/Capstone/cdw_sapp_branch.json")
-creditdf = spark.read.json("C:/Capstone/cdw_sapp_credit.json")
-customerdf = spark.read.json("C:/Capstone/cdw_sapp_custmer.json")
+branchdf = spark.read.json("C:/Capstone/JSON Databases/cdw_sapp_branch.json")
+creditdf = spark.read.json("C:/Capstone/JSON Databases/cdw_sapp_credit.json")
+customerdf = spark.read.json("C:/Capstone/JSON Databases/cdw_sapp_custmer.json")
 
 # Converting df to PANDAS df
 branchpd = branchdf.toPandas()
