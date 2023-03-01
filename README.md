@@ -14,7 +14,7 @@ Run the "Functions & Console Menu_final.py" console program.
 The program reads loaded database via pyspark.sql SparkSession to make data queries.
 
 Here's the Console Menu Skeleton:
-Main Menu:
+Main Menu: 
 1. Transaction Details Menu
     1.1. Customer Transactions by ZIP
         inputs: zip, month, year
