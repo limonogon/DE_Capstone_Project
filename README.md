@@ -16,18 +16,18 @@ The program reads loaded database via pyspark.sql SparkSession to make data quer
 Here's the Console Menu Skeleton:
 Main Menu: 
 1. Transaction Details Menu
-    1.1. Customer Transactions by ZIP
-        inputs: zip, month, year
-    1.2. Transactions by Transaction Type
+---1.1. Customer Transactions by ZIP
+------inputs: zip, month, year
+---1.2. Transactions by Transaction Type
         inputs: type
-    1.3. Transactions of Branches by State
+---1.3. Transactions of Branches by State
         inputs: state
-    1.4. Back to Main Menu
-    1.5. Quit
+---1.4. Back to Main Menu
+---1.5. Quit
 2. Customer Details Menu
-    2.1. Check the Account Details of the Customer
+---2.1. Check the Account Details of the Customer
         inputs: ssn
-    2.2. Modify the Account Details of the Customer
+---2.2. Modify the Account Details of the Customer
         inputs: ssn
         Choose the parameter to update Menu:
         2.2.1. First Name
@@ -71,22 +71,22 @@ Main Menu:
             Confirm Y/N Menu:
                 inputs: y, n
         2.2.11. Exit to the Previous Menu
-    2.3. Generate a Monthly Bill by Credit Card for a given Month and Year
+---2.3. Generate a Monthly Bill by Credit Card for a given Month and Year
         inputs: credit_card_no, month, year
-    2.4. Display Customer Transactions between Two Dates
+---2.4. Display Customer Transactions between Two Dates
         inputs: credit_card_no, start_date, end_date
-    2.5. Back to Main Menu
-    2.6. Quit
+---2.5. Back to Main Menu
+---2.6. Quit
 3. Data Analysis and Visualization Menu
-    3.1. Transaction type with a high rate of transactions plot
-    3.2. State with a high number of customers plot
-    3.3. Customer with the highest transaction amount plot (all customers)
-    3.4. Approved applications for self-employed applicants percentage plot
-    3.5. Rejection for married male applicants percentage plot
-    3.6. Top 3 months with the largest transaction data plot
-    3.7. Branch with the highest total value of healthcare transactions plot
-    3.8. Back to Main Menu
-    3.9. Quit
+---3.1. Transaction type with a high rate of transactions plot
+---3.2. State with a high number of customers plot
+---3.3. Customer with the highest transaction amount plot (all customers)
+---3.4. Approved applications for self-employed applicants percentage plot
+---3.5. Rejection for married male applicants percentage plot
+---3.6. Top 3 months with the largest transaction data plot
+---3.7. Branch with the highest total value of healthcare transactions plot
+---3.8. Back to Main Menu
+---3.9. Quit
 4. Exit
 
 
