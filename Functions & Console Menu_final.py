@@ -24,7 +24,6 @@ with open('secrets.txt', 'r') as f:
         elif line.startswith('URL='):
             url = line.split('=')[1].strip()
 
-#Create a connection to MYSQL Database
 branch_df=spark.read.format("jdbc").options(driver="com.mysql.cj.jdbc.Driver",\
                                      user=user,\
                                      password=password,\
@@ -386,7 +385,7 @@ def console():
                 # Transaction Menu options list
                 t_menu = pyip.inputMenu(['Customer Transactions by ZIP',
                                         'Transactions by Transaction Type',
-                                        'Transactions of State Branch',
+                                        'Transactions of Branches by State',
                                         'Back to Main Menu',
                                         'Quit'], numbered=True)
                 
@@ -442,8 +441,8 @@ def console():
                             print('Not a valid transaction type.')
                         
                 # Transaction Menu Function #3
-                elif t_menu == 'Transactions of State Branch':
-                    print('This is the Transactions of State Branch function')
+                elif t_menu == 'Transactions of Branches by State':
+                    print('This is the Transactions of Branches by State function')
                     states_list = branch_df.select('BRANCH_STATE').distinct().toPandas().iloc[:,0].to_list()
                     while True:
                         state = input('Please enter 2-letter state abbreviation or enter 0 to Cancel: ').upper()
